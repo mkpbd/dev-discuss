@@ -91,11 +91,11 @@ let undefinedType : undefined = undefined;
 
 /// never types 
 
-function throwError(message: string): never {
+function throwError1(message: string): never {
     throw new Error(message);
 }
 
-function infiniteLoop(): never {
+function infiniteLoop1(): never {
     while (true) {
         console.log("This function will run forever.");
     }

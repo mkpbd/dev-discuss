@@ -128,3 +128,83 @@ discounts = 20; // Now it's a number
 let statusForMessage = "success";
 statusForMessage = "error"; // Now it's a string
 statusForMessage = "loading"; // Now it's a string
+function printUser(user) {
+    console.log(`Name: ${user.name}, Email: ${user.email}, Employed: ${user.id}`);
+}
+// union types 
+let userId;
+userId = "12345"; // Now it's a string
+userId = 12345; // Now it's a number
+userId = null; // Now it's null
+let productShipping = "standard";
+productShipping = "express"; // Now it's a string
+let proOjb = {
+    name: "John",
+    age: 30,
+    isEmployed: true
+};
+let objectType1 = {
+    name: "John",
+    age: 30,
+    isEmployed: true
+};
+proOjb.age = 35; // Now it's a number
+proOjb.name = "Doe"; // Now it's a string
+// let person = new  person ();
+// var ab = objectType1 as any;
+// ab.name = "Doe"; // Now it's a string
+//  List<in> number = new List<in>();
+//  number.Add(1);
+//  number.Add(2);
+// number.remove(1);
+//  numbArray 
+let numbArray = [4, 5];
+// tack 
+numbArray.push(6);
+// numbArray.pop();
+/// queue 
+// numbArray.shift();
+// numbArray.unshift(10);
+console.log(numbArray);
+const userObject = {
+    name: function () {
+        return "John Doe";
+    },
+    age: function () {
+        return 30;
+    },
+    array: [2, 2, 3, 4, 54, 6, 7, 8, 89, 5],
+    obj: {
+        name: "John",
+        age: 3330,
+        isEmployed: true
+    }
+};
+console.log(userObject.name());
+console.log(userObject.age());
+console.log(userObject.obj.age);
+// public int Name {get; set;}
+let userTypeObject = {
+    name: "John Doe",
+    age: 30,
+    isEmployed: true,
+    address: {
+        street: "123 Main St",
+        city: "New York",
+        state: "NY",
+        zip: "10001"
+    }
+};
+// only  object type define first then  assign value
+let bookType;
+bookType = {
+    title: "The Great Gatsby",
+    authero: "F. Scott Fitzgerald",
+};
+bookType.ISBN = "9780743273565"; // Optional property can be added later
+bookType.title = "abc"; // Optional property can be added later
+console.log(bookType.ISBN); // Optional property can be added later
+console.log(bookType.title); // Optional property can be added later
+function UserInfo(user) {
+    return user;
+}

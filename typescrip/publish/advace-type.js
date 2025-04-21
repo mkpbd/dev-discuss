@@ -61,10 +61,10 @@ function voidFunction2() {
 let nullType = null;
 let undefinedType = undefined;
 /// never types 
-function throwError(message) {
+function throwError1(message) {
     throw new Error(message);
 }
-function infiniteLoop() {
+function infiniteLoop1() {
     while (true) {
         console.log("This function will run forever.");
     }
